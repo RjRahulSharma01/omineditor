@@ -1,0 +1,19 @@
+# secrets
+.env
+*.key
+# user media + generations (kit ships empty) — per-project folders
+projects/*/input/*.mp4
+projects/*/input/*.mov
+projects/*/assets/*/
+projects/*/beats/*/
+projects/*/output/*.mp4
+# but keep the empty _TEMPLATE skeleton so it ships in the repo
+!projects/_TEMPLATE/assets/refs/
+!projects/_TEMPLATE/beats/
+projects/*/analysis/*.json
+projects/*/analysis/beat-plan.md
+*.taskid
+.gen.json
+# os
+.DS_Store
+node_modules/
